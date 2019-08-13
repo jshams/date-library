@@ -1,0 +1,35 @@
+{
+    "name": "dater",
+    "version": "1.0.0",
+    "description": "Dates Library",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jshams/date-library.git"
+    },
+    "keywords": [
+        "date"
+    ],
+    "author": "Jake Shams",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jshams/date-library/issues"
+    },
+    "homepage": "https://github.com/jshams/date-library#readme",
+    "dependencies": {
+        "jest": "^24.8.0"
+    },
+    "jest": {
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true
+    },
+    "devDependencies": {
+        "codecov": "^3.5.0"
+    }
+}
