@@ -34,10 +34,10 @@ test('getYear', () => {
     expect(result).toBe(2017)
 })
 
-test('shortYear', () => {
+test('getShortYear', () => {
     let date;
     date = new Dater(2017)
-    let result = date.shortYear()
+    let result = date.getShortYear()
     expect(result).toBe(17)
 })
 
@@ -47,15 +47,15 @@ test('getMonth', () => {
     expect(result).toBe(11)
 })
 
-test('strMonth', () => {
+test('getStrMonth', () => {
     let date = new Dater(2017, 11)
-    let result = date.strMonth()
+    let result = date.getStrMonth()
     expect(result).toBe('November')
 })
 
-test('abbrMonth', () => {
+test('getAbbrMonth', () => {
     let date = new Dater(2017, 11)
-    let result = date.abbrMonth()
+    let result = date.getAbbrMonth()
     expect(result).toBe('Nov')
 })
 

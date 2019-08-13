@@ -1,4 +1,4 @@
-class Dater {
+class D {
     constructor(...args) {
         this.year = 0
         this.month = 0
@@ -33,17 +33,17 @@ class Dater {
     getYear() {
         return this.year
     }
-    shortYear() {
+    getShortYear() {
         return this.year % 100
     }
     getMonth() {
         return this.month
     }
-    strMonth() {
+    getStrMonth() {
         const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         return months[this.getMonth() - 1]
     }
-    abbrMonth() {
+    getAbbrMonth() {
         const abbrMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         return abbrMonths[this.getMonth() - 1]
     }
@@ -64,11 +64,11 @@ class Dater {
         return `0${num.toString()}`
     }
     format(form = '') {
-        if (form == '') return `${this.getYear()} ${this.strMonth()} ${this.getDay()}`
+        if (form == '') return `${this.getYear()} ${this.getStrMonth()} ${this.getDay()}`
         const Y = this.getYear()
-        const y = this.shortYear()
-        const M = this.strMonth()
-        const m = this.abbrMonth()
+        const y = this.getShortYear()
+        const M = this.getStrMonth()
+        const m = this.getAbbrMonth()
         const D = this.padWithZero(this.getDay())
         const d = this.getDay()
         const H = this.padWithZero(this.getHour())
@@ -94,4 +94,4 @@ class Dater {
 
 }
 
-module.exports = Dater
+module.exports = D
