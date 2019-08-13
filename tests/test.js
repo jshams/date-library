@@ -97,5 +97,7 @@ test('format', () => {
     expect(result).toBe('2017-January-02 3:04:05')
     result = date.format('y/m/d')
     expect(result).toBe('17/Jan/2')
+    result = date.format()
+    expect(result).toBe('2017 January 2')
 })
 

@@ -79,7 +79,6 @@ class D {
         const s = this.getSecs()
         return form.replace('Y', Y)
             .replace('y', y)
-            .replace()
             .replace('M', M)
             .replace('m', m)
             .replace('D', D)
